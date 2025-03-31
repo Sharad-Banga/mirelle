@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         bodoni: ['"Bodoni Moda"', 'serif'],
+        playfair: ["Playfair Display", "serif"],
       },
     },
   },

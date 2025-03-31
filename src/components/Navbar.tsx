@@ -15,8 +15,8 @@ export const Navbar = ({ darki, setDarki }: NavbarProps) => {
     
   }
   return(
-    <div className={`${darki ? "dark" : ""} select-none`}>
-        <div className={` sm:h-[70px] dark:bg-black dark:text-white  pl-[10px]  bg-white text-black mr-0 flex justify-evenly h-[60px] sm:justify-between sm:pl-10 sm:pr-10 items-center `}>
+    <div className={`${darki ? "dark" : ""} select-none fixed `}>
+        <div className={` sm:h-[70px] dark:bg-black dark:text-white  pl-[10px] w-screen bg-white text-black mr-0 flex justify-evenly h-[60px] sm:justify-between sm:pl-10 sm:pr-10 items-center `}>
 
           <div className="hidden sm:flex gap-10">
             <div>HOME</div>
