@@ -12,7 +12,7 @@ export interface ButtonProps{
 
 const variantStyles = {
   "primary":"bg-[#222222]  text-white  text-[90%]",
-  "secondary":"bg-[#41c0b6] text-black",
+  "secondary":"bg-white text-black rounded-3xl",
   "sign" : "bg-[#1e8682] w-full flex justify-center text-white",
   "submit" : "bg-red-500 w-[85%] flex justify-center h-[10%] mb-4"
 }

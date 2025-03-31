@@ -1,4 +1,5 @@
 import { Slide } from "react-awesome-reveal";
+import { Button } from "./Button";
 
 interface CollectionInter {
   darki : Boolean;
@@ -20,18 +21,26 @@ export const Collections = ({darki}:CollectionInter) =>{
 
 
                   
-                      <div className="h-full  w-[20%] rounded-lg  bg-center bg-no-repeat  bg-[url('./images/c1.png')]">
+                    <div className="h-full  w-[20%] rounded-lg  bg-center bg-no-repeat  bg-[url('./images/c1.png')]">
 
-                      </div>                  
+                      <div className=" h-[95%] flex-col flex justify-end items-center">
+                        <Button variant="secondary" text="Men's Collection ->" />
+                      </div>
+
+                    </div>                  
                   
                     <div className="h-full w-[25%] bg-center rounded-lg  bg-[url('./images/c2.png')]">
-                    
+                      <div className=" h-[95%] flex-col flex justify-end items-center">
+                        <Button variant="secondary" text="Women's Collection ->" />
+                      </div>
                     </div>
                   
                   
                   
                     <div className="sm:h-full w-[20%] bg-center rounded-lg  bg-[url('./images/c3.png')]">
-                    
+                      <div className=" h-[95%] flex-col flex justify-end items-center">
+                        <Button variant="secondary" text="Summer Collection ->" />
+                      </div>
                     </div>
 
             </div>
