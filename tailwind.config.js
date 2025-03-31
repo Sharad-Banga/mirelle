@@ -10,6 +10,7 @@ export default {
       fontFamily: {
         bodoni: ['"Bodoni Moda"', 'serif'],
         playfair: ["Playfair Display", "serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
