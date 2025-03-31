@@ -18,7 +18,7 @@ const variantStyles = {
 }
 
 const sizeStyles = {
-  "sm":"pl-2 ",
+  "sm":"sm:pl-2 ",
   "md":"pl-4 pr-4 pt-2 pb-2",
   "lg":"p-6"
 
