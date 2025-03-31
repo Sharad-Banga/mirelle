@@ -9,15 +9,15 @@ interface HeroSectionProps {
 export const HeroSection = ({ darki }: HeroSectionProps) => {
   return(
     <>
-        <div className={`${darki?"dark":""} pt-[60px]`}>
+        <div className={`${darki?"dark":""} pt-[60px] overflow-x-hidden`}>
           <div className={`sm:h-[10px] bg-white dark:bg-black`}>
 
           </div>
             <div className="flex justify-center items-center w-full bg-white dark:bg-black">
-                <div className="bg-[url('./images/img3.png')] w-screen mt-[20px] h-[50vh]  bg-no-repeat bg-inherit bg-cover bg-center
+                <div className="bg-[url('./images/img3.png')] w-full mt-[20px] h-[50vh]  bg-no-repeat bg-inherit bg-cover bg-center
                  sm:h-[88vh] ">
 
-                  <div className=" h-[200px] mt-[65%] sm:mt-[22%] flex justify-around  ">
+                  <div className=" h-[200px] mt-[65%] sm:mt-[22%] flex justify-around w-full pl-2 pr-2">
                       <div>
                         <Slide damping={0.1}  triggerOnce className="text-white text-[13px]  sm:text-[24px] font-medium">
                           <p>ELEGENCE MEETS</p>
@@ -43,8 +43,8 @@ export const HeroSection = ({ darki }: HeroSectionProps) => {
             </div>
           <div className={`h-[100px] sm:h-[203px] dark:bg-[#3a3a3a] bg-[#d4d4d4] dark:text-white`}>
 
-              <Fade cascade damping={0.4} className="font-playfair text-[18px] gap-0  sm:text-[50px]  flex justify-center sm:pt-[1%]">
-                <p className="pt-[20px]">Elevate Your  Style  with MIRELLE</p>
+              <Fade cascade damping={0.4} triggerOnce={true} className="font-playfair sm:leading-tight text-[18px] gap-0  sm:text-[50px]  flex justify-center sm:pt-[1%]">
+                <p className="pt-[22px] sm:pt-[7px]">Elevate Your  Style  with MIRELLE</p>
                 <p> Where Elegance Meets Style</p>
               </Fade>
 
