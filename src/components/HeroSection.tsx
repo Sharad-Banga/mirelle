@@ -4,10 +4,9 @@ import { OpenIcon } from "../icons/OpenIcon"
 
 interface HeroSectionProps {
   darki: boolean;
-  setDarki: (value: boolean) => void;
 }
 
-export const HeroSection = ({ darki, setDarki }: HeroSectionProps) => {
+export const HeroSection = ({ darki }: HeroSectionProps) => {
   return(
     <>
         <div className={`${darki?"dark":""} pt-[60px]`}>

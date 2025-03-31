@@ -12,7 +12,7 @@ function App() {
     <>
       
       <Navbar darki={darki} setDarki={setDarki} />
-      <HeroSection darki={darki} setDarki={setDarki}/>
+      <HeroSection darki={darki} />
     </>
   )
 }
