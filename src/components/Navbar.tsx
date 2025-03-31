@@ -5,12 +5,12 @@ import { LightIcon } from "../icons/LightIcon"
 
 interface NavbarProps {
   darki: boolean;
-  setDarki: (value: (prev: boolean) => boolean) => boolean;
+  setDarki: (value: boolean) => void;
 }
 
 export const Navbar = ({ darki, setDarki }: NavbarProps) => {
   function handleModes(){
-    setDarki((a)=>!a);
+    setDarki(!darki);
     console.log(darki);
     
   }

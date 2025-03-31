@@ -1,5 +1,13 @@
-import { Fade } from "react-awesome-reveal";
-export const HeroSection = ({darki,setDarki}) =>{
+import { Fade, Slide } from "react-awesome-reveal";
+import { Button } from "./Button";
+import { OpenIcon } from "../icons/OpenIcon"
+
+interface HeroSectionProps {
+  darki: boolean;
+  setDarki: (value: boolean) => void;
+}
+
+export const HeroSection = ({ darki, setDarki }: HeroSectionProps) => {
   return(
     <>
         <div className={`${darki?"dark":""} pt-[60px]`}>
@@ -9,6 +17,28 @@ export const HeroSection = ({darki,setDarki}) =>{
             <div className="flex justify-center items-center w-full bg-white dark:bg-black">
                 <div className="bg-[url('./images/img3.png')] w-screen mt-[20px] h-[50vh]  bg-no-repeat bg-inherit bg-cover bg-center
                  sm:h-[88vh] ">
+
+                  <div className=" h-[100px] mt-[65%] sm:mt-[28%] flex justify-around items-center ">
+                      <div>
+                        <Slide damping={0.1}  triggerOnce className="text-white text-[13px] sm:text-[24px] font-medium">
+                          <p>ELEGENCE MEETS</p>
+                          <p>MODERN STYLE</p>
+                        </Slide>
+                      </div>
+
+                      <div>
+                          <Slide damping={0.1} direction="up" duration={2000} triggerOnce className="text-white text-[18px] font-medium mt-10">
+                            <Button variant="primary" size="md" text="Explore" endIcon={<OpenIcon/>} />
+                          </Slide>
+                      </div>
+
+                      <div className=" font-extrabold text-[22px]">
+                        <Slide damping={0.1} direction="right"  triggerOnce className="text-white text-[28px] font-medium">
+                          <p>Flat 20% off</p>
+                        </Slide>
+                        
+                      </div>
+                  </div>
 
                 </div>
             </div>
