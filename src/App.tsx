@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { Collections } from './components/Collections';
 import { Prestige } from './components/Prestige';
+import { Fav } from './components/Fav';
 
 function App() {
 
@@ -18,9 +19,7 @@ function App() {
       <Collections darki={darki} />
       <Prestige darki={darki} />
 
-      <div className='h-screen bg-black'>
-        
-      </div>
+      <Fav darki={darki}/>
     </>
   )
 }
