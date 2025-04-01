@@ -63,55 +63,26 @@ export const Fav =({darki}:FavInter)=>{
     
 
 
-  const [x, setX] = useState(0);
-  const [currentCard, setCurrentCard] = useState(cards[0]);
-
-  useEffect(() => {
-    
-    const intervalId = setInterval(() => {
-      setX((prevX) => (prevX + 1) % 5);
-    }, 2000);
-
-    
-    return () => clearInterval(intervalId);
-  }, []);
-
-  useEffect(() => {
-    setCurrentCard(cards[x]);
-  }, [x]);
 
 
 
   return(
-    <div className={`${darki?"dark":""} `}>
+    <div className=" h-[100vh] bg-white dark:bg-black dark:text-white text-black flex-col flex justify-evenly" >
 
-          <div className="h-[100vh] dark:bg-black bg-white flex flex-col justify-around">
+          <div className="font-poppins text-3xl dark:text-white text-black flex justify-center">
+              Customer Favourites
+        </div>
 
-              <div className="font-poppins text-[30px] dark:text-white text-black flex justify-center">
-                  Customer Favourites
+        <div className="h-[60vh] bg-red-300 flex  justify-around">
+              <div className="h-full w-[30vw] bg-[url('./images/f1.png') ">
+
+
+
               </div>
-
-              <div className="h-[60vh] flex  justify-center gap-3 items-center ">
-
-                    <div className="h-[300px] bg-cover bg-center w-[200px] opacity-55" 
-                    style={{ backgroundImage: `url('./images/f1.png')` }}>
-
-<img 
-              src="/images/f1.png" 
-              alt="Fixed image" 
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-
-                    </div>
-                  
-                  <div className="h-[360px] ] w-[250px] opacity-100 z-20 bg-cover bg-center" style={{ backgroundImage: `url(${currentCard.i1})` }} >
-
-                  </div>
-                  
+              <div className="bg-red-800 h-full w-[30vw] bg-[url('./images/f1.png') ">
                 
               </div>
-
-          </div>
+        </div>
     
     </div>
   )
