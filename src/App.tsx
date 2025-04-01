@@ -8,7 +8,7 @@ import { Prestige } from './components/Prestige';
 
 function App() {
 
-  const [darki , setDarki] = useState(false);
+  const [darki , setDarki] = useState(true);
 
   return (
     <>
@@ -17,6 +17,10 @@ function App() {
       <HeroSection darki={darki} />
       <Collections darki={darki} />
       <Prestige darki={darki} />
+
+      <div className='h-screen bg-black'>
+        
+      </div>
     </>
   )
 }

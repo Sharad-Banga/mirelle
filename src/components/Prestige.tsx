@@ -7,9 +7,9 @@ export const Prestige =({darki}:PrestigeInter) =>{
   return(
     <div  className={`${darki?"dark":""} `} >
 
-      <div className="h-[90vh] sm:h-[110vh] p-4 sm:p-0 flex-col flex justify-between border-t-2 border-black dark:border-white">
+      <div className="h-[90vh] sm:h-[110vh] p-4 sm:p-0 flex-col flex justify-between border-t-2 border-black dark:border-white bg-white dark:bg-black dark:text-white border-b-2 ">
 
-          <div className=" h-[15vh] mt-4 flex items-center justify-evenly">
+          <div className=" h-[15vh] mt-4 sm:mt-10 flex items-center justify-evenly">
 
                   <div className="font-semibold font-poppins text-[#DEA12F]">
                   ● Prestige
@@ -34,14 +34,14 @@ export const Prestige =({darki}:PrestigeInter) =>{
               </div>
             </div>
 
-            <div className="w-[65%]  md:w-[20%] h-[30vh] md:h-full bg-contain bg-no-repeat bg-center bg-[url('./images/p1.png')] rounded-lg">
+            <div className="w-[65%] sm:w-[40%]  md:w-[20%] h-[30vh] md:h-full bg-contain bg-no-repeat bg-center bg-[url('./images/p1.png')] rounded-lg">
             </div>
 
-            <div className="w-[45%] hidden sm:inline md:w-[20%] h-[30vh] md:h-full bg-contain bg-no-repeat bg-center bg-[url('./images/p2.png')] rounded-lg">
+            <div className="w-[45%] hidden md:inline md:w-[20%] h-[30vh] md:h-full bg-contain bg-no-repeat bg-center bg-[url('./images/p2.png')] rounded-lg">
             </div>
           </div>
-          <div className="bg-blue-300 h-[15vh] ">
-
+          <div className=" h-[15vh] text-white/10 font-rammetto   flex-col flex justify-end text-[300%] ml-5 sm:text-[600%] ">
+                MIRELLE
           </div>
 
       </div>

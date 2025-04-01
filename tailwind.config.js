@@ -12,6 +12,7 @@ export default {
         playfair: ["Playfair Display", "serif"],
         poppins: ["Poppins", "sans-serif"],
         quattrocento: ['Quattrocento', 'serif'],
+        rammetto: ['Rammetto One', 'cursive'],
       },
     },
   },
