@@ -9,7 +9,7 @@ export const Collections = ({darki}:CollectionInter) =>{
   return(
     <div className={`${darki?"dark":""}`}>
 
-      <div className={`h-[390px] sm:h-[100vh]  dark:bg-black bg-white flex-col flex justify-around`}>
+      <div className={`h-[400px] sm:h-[100vh]  dark:bg-black bg-white flex-col flex justify-around `}>
 
         <div className=" h-[10vh] dark:text-white flex justify-center font-poppins items-end sm:text-[30px]">
           Shop Our Collections  
@@ -30,7 +30,7 @@ export const Collections = ({darki}:CollectionInter) =>{
 
                     </div>                  
                   
-                    <div className="h-full  w-[110px] sm:w-[25%] bg-cover sm:bg-center rounded-lg  bg-[url('./images/c2.png')]">
+                    <div className="h-full  w-[120px] sm:w-[25%] bg-cover sm:bg-center rounded-lg  bg-[url('./images/c2.png')]">
                       <div className=" h-[95%] flex-col flex justify-end items-center">
                         <Button variant="secondary" text="Women's Collection ➝" />
                       </div>
@@ -47,6 +47,10 @@ export const Collections = ({darki}:CollectionInter) =>{
             </div>
         </Slide>
 
+
+      </div>
+
+      <div className="h-14 dark:bg-black bg-white">
 
       </div>
     

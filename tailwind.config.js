@@ -11,6 +11,7 @@ export default {
         bodoni: ['"Bodoni Moda"', 'serif'],
         playfair: ["Playfair Display", "serif"],
         poppins: ["Poppins", "sans-serif"],
+        quattrocento: ['Quattrocento', 'serif'],
       },
     },
   },

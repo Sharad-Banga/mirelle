@@ -12,7 +12,7 @@ export interface ButtonProps{
 
 const variantStyles = {
   "primary":"bg-[#222222]  text-white  text-[90%]",
-  "secondary":"bg-white text-black rounded-3xl",
+  "secondary":"bg-white text-black rounded-3xl text-[10px] p-1 sm:text-[90%] sm:p-3",
   "sign" : "bg-[#1e8682] w-full flex justify-center text-white",
   "submit" : "bg-red-500 w-[85%] flex justify-center h-[10%] mb-4"
 }
@@ -28,7 +28,7 @@ const defaultStyles = "rounded-lg p-4";
 
 export const Button = (props :ButtonProps) =>{
   return(
-    <button className={`${variantStyles[props.variant]} ${defaultStyles} ${sizeStyles[props.size || 'md']} flex items-center gap-2 `}
+    <button className={`${variantStyles[props.variant]} ${defaultStyles} ${sizeStyles[props.size ]} flex items-center gap-2 `}
      onClick={props.onClick} > {props.startIcon} {props.text} {props.endIcon}</button>
   )
 }
