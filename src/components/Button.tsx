@@ -3,7 +3,7 @@
 
 export interface ButtonProps{
   variant : "primary" | "secondary"|"sign"|"submit";
-  size? : "sm"|"md"|"lg";
+  size? : "sm"|"md"|"lg"|"jj"|undefined;
   text : string;
   startIcon? : any;
   endIcon? : any;
@@ -20,15 +20,15 @@ const variantStyles = {
 const sizeStyles = {
   "sm":"sm:pl-2 ",
   "md":"pl-4 pr-4 pt-2 pb-2",
-  "lg":"p-6"
-
+  "lg":"p-6",
+  "jj":"p-0"
 }
 
 const defaultStyles = "rounded-lg p-4";
 
 export const Button = (props :ButtonProps) =>{
   return(
-    <button className={`${variantStyles[props.variant]} ${defaultStyles} ${sizeStyles[props.size ]} flex items-center gap-2 `}
+    <button className={`${variantStyles[props.variant]} ${defaultStyles} ${sizeStyles[props.size||"jj"]} flex items-center gap-2 `}
      onClick={props.onClick} > {props.startIcon} {props.text} {props.endIcon}</button>
   )
 }
