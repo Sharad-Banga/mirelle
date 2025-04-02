@@ -17,9 +17,9 @@ export const HeroSection = ({ darki }: HeroSectionProps) => {
                 <div className="bg-[url('./images/img3.png')] w-full mt-[20px] h-[63vh]  bg-no-repeat bg-inherit bg-cover bg-center
                  sm:h-[88vh] ">
 
-                  <div className=" sm:h-[200px] mt-[65%] sm:mt-[22%] flex justify-around w-full pl-2 pr-2">
+                  <div className=" sm:h-[200px] mt-[65%] sm:mt-[26%] flex justify-around w-full pl-2 pr-2">
                       <div className="h-full">
-                        <Slide damping={0.1}  triggerOnce className="text-[#333333] sm:text-white text-[14px]  sm:text-[24px] font-bold">
+                        <Slide damping={0.1}  triggerOnce className="text-[#333333] sm:text-[#2c3a45] text-[14px]  sm:text-[24px] font-bold">
                           <p>ELEGENCE MEETS</p>
                           <p>MODERN STYLE</p>
                         </Slide>
@@ -32,7 +32,7 @@ export const HeroSection = ({ darki }: HeroSectionProps) => {
                       </div>
 
                       <div className=" font-extrabold text-[22px] h-full">
-                        <Slide damping={0.1} direction="right"  triggerOnce className="text-[#333333] sm:text-white font-bold text-[20px] sm:text-[28px] ">
+                        <Slide damping={0.1} direction="right"  triggerOnce className="text-[#333333] sm:text-[#2c3a45] font-bold text-[20px] sm:text-[28px] ">
                           <p>Flat 20% off</p>
                         </Slide>
                         

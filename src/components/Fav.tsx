@@ -101,8 +101,8 @@ export const Fav =({darki}:FavInter)=>{
             Customer Favourites
         </div>
 
-        <div className="h-[80vh]  flex  justify-around">
-            <div className={`h-full w-[30vw] bg-[url('./images/f${x}.png')] bg-cover`}>
+        <div className="h-[80vh] mt-6 flex  justify-center gap-64">
+            <div className={`hidden sm:flex h-full w-[30vw] bg-[url('./images/f${x}.png')] bg-cover rounded-md`}>
 
             </div>
 
@@ -112,8 +112,8 @@ export const Fav =({darki}:FavInter)=>{
                       <LeftIcon/>
                   </div>
 
-                    <div className="flex-col sm:mt-44 bg-red h-full">
-                          <div className={` h-[65%] w-[22vw] bg-[url('./images/fi${x}.png')] bg-cover`}>
+                    <div className=" flex-col sm:mt-10 bg-red h-[60vh]">
+                          <div className={` h-[85%] w-[80vw] sm:w-[22vw] bg-[url('./images/fi${x}.png')] bg-cover rounded-md`}>
                             
                           </div>
 

@@ -17,11 +17,11 @@ export const Collections = ({darki}:CollectionInter) =>{
 
 
         <Slide damping={0.1} direction="up" duration={1200} triggerOnce >
-            <div className=" sm:h-[72vh] h-[30vh]  flex justify-evenly">
+            <div className=" sm:h-[72vh] h-[30vh]  flex justify-evenly sm:justify-center sm:gap-7">
 
 
                   
-                    <div className=" h-full w-[110px]  sm:w-[20%] rounded-lg  bg-cover sm:bg-center bg-no-repeat  bg-[url('./images/c1.png')]">
+                    <div className=" h-full w-[110px]  sm:w-[25%] rounded-3xl  bg-cover sm:bg-center bg-no-repeat  bg-[url('./images/c1.png')]">
 
                       <div className=" h-[95%] flex-col flex justify-end items-center">
                         <Button variant="secondary" text="Men's Collection ➝" />
@@ -30,7 +30,7 @@ export const Collections = ({darki}:CollectionInter) =>{
 
                     </div>                  
                   
-                    <div className="h-full  w-[120px] sm:w-[25%] bg-cover sm:bg-center rounded-lg  bg-[url('./images/c2.png')]">
+                    <div className="h-full  w-[120px] sm:w-[27%] bg-cover sm:bg-center rounded-3xl  bg-[url('./images/c2.png')]">
                       <div className=" h-[95%] flex-col flex justify-end items-center">
                         <Button variant="secondary" text="Women's Collection ➝" />
                       </div>
@@ -38,7 +38,7 @@ export const Collections = ({darki}:CollectionInter) =>{
                   
                   
                   
-                    <div className="sm:h-full  w-[110px] sm:w-[20%] bg-cover sm:bg-center rounded-lg  bg-[url('./images/c3.png')]">
+                    <div className="sm:h-full  w-[110px] sm:w-[25%] bg-cover sm:bg-center rounded-3xl  bg-[url('./images/c3.png')]">
                       <div className=" h-[95%] flex-col flex justify-end items-center">
                         <Button variant="secondary" text="Summer Collection ➝" />
                       </div>
