@@ -81,10 +81,10 @@ export const Fav =({darki}:FavInter)=>{
     function handleNext(){
 
       if(x>4){
-        setX(x=>1);
+        setX(1);
       }
       else{
-        setX(x=>x+1);
+        setX(zx=>zx+1);
       }
     }
 
