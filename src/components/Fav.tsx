@@ -102,7 +102,7 @@ export const Fav =({darki}:FavInter)=>{
         </div>
 
         <div className="h-[80vh] mt-6 flex  justify-center gap-64">
-            <div className={`hidden sm:flex h-full w-[30vw] bg-[url('./images/f${x}.png')] bg-cover rounded-md`}>
+            <div className={`hidden sm:flex h-full w-[30vw] bg-[url('/images/f${x}.png')] bg-cover rounded-md`}>
 
             </div>
 
@@ -113,7 +113,7 @@ export const Fav =({darki}:FavInter)=>{
                   </div>
 
                     <div className=" flex-col sm:mt-10 bg-red h-[60vh]">
-                          <div className={` h-[85%] w-[80vw] sm:w-[22vw] bg-[url('./images/fi${x}.png')] bg-cover rounded-md cursor-pointer hover:bg-[url('./images/f${x}.png')]`}>
+                          <div className={` h-[85%] w-[80vw] sm:w-[22vw] bg-[url('/images/fi${x}.png')] bg-cover rounded-md cursor-pointer hover:bg-[url('./images/f${x}.png')]`}>
                             
                           </div>
 
