@@ -63,12 +63,12 @@ export const Fav =({darki}:FavInter)=>{
 
     
     let [x,setX] = useState(1);
+    
 
     function handleback(){
 
-      if(x==0){
-        setX(5);
-      }
+      console.log(x);
+      
 
       if(x<2){
         setX(x=>5);
