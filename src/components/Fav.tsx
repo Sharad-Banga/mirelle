@@ -71,10 +71,10 @@ export const Fav =({darki}:FavInter)=>{
       
 
       if(x<2){
-        setX(x=>5);
+        setX(5);
       }
       else{
-        setX(x=>x-1);
+        setX(px=>px-1);
       }
     }
 
