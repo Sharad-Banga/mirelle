@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { LeftIcon } from "../icons/LeftIcon";
+import { NextIcon } from "../icons/NextIcon";
 
 
 interface FavInter{
@@ -60,28 +62,75 @@ const cards = [
 export const Fav =({darki}:FavInter)=>{
 
     
-    
+    let [x,setX] = useState(1);
 
+    function handleback(){
+
+      if(x==0){
+        setX(5);
+      }
+
+      if(x<2){
+        setX(x=>5);
+      }
+      else{
+        setX(x=>x-1);
+      }
+    }
+
+    function handleNext(){
+
+      if(x>4){
+        setX(x=>1);
+      }
+      else{
+        setX(x=>x+1);
+      }
+    }
 
 
 
 
   return(
-    <div className=" h-[100vh] bg-white dark:bg-black dark:text-white text-black flex-col flex justify-evenly" >
+    <div className={`${darki?"dark":""} `}>
 
-          <div className="font-poppins text-3xl dark:text-white text-black flex justify-center">
-              Customer Favourites
+
+        <div className=" h-[100vh] bg-white dark:bg-black dark:text-white text-black flex-col flex justify-evenly" >
+
+        <div className="font-poppins text-3xl dark:text-white text-black flex justify-center">
+            Customer Favourites
         </div>
 
-        <div className="h-[60vh] bg-red-300 flex  justify-around">
-              <div className="h-full w-[30vw] bg-[url('./images/f1.png') ">
+        <div className="h-[80vh]  flex  justify-around">
+            <div className={`h-full w-[30vw] bg-[url('./images/f${x}.png')] bg-cover`}>
+
+            </div>
 
 
+            <div className="flex items-center gap-3">
+                  <div onClick={handleback} className=" cursor-pointer">
+                      <LeftIcon/>
+                  </div>
 
-              </div>
-              <div className="bg-red-800 h-full w-[30vw] bg-[url('./images/f1.png') ">
-                
-              </div>
+                    <div className="flex-col sm:mt-44 bg-red h-full">
+                          <div className={` h-[65%] w-[22vw] bg-[url('./images/fi${x}.png')] bg-cover`}>
+                            
+                          </div>
+
+                          <div className="flex-col">
+                            <div className="flex justify-center">{cards[x-1].name}</div>
+                            <div className="flex justify-center">{cards[x-1].price}</div>
+                          </div>
+                    </div>
+                   
+                  <div onClick={handleNext} className=" cursor-pointer">
+                    <NextIcon/>
+                  </div>
+            </div>
+
+            
+        </div>
+
         </div>
     
     </div>
