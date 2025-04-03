@@ -17,7 +17,7 @@ export const HeroSection = ({ darki }: HeroSectionProps) => {
                 <div className="bg-[url('/images/img3.png')] w-[95vw] rounded-lg mb-2.5 sm:mb-8 mt-[20px] h-[63vh]  bg-no-repeat bg-inherit bg-cover bg-center
                  sm:h-[88vh] ">
 
-                  <div className=" sm:h-[200px] mt-[65%] sm:mt-[26%] flex justify-around w-full pl-2 pr-2">
+                  <div className=" sm:h-[200px] mt-[89%] ml-2 sm:ml-0 sm:mt-[26%] flex justify-around w-full pl-2 pr-2">
                       <div className="h-full">
                         <Slide damping={0.1}  triggerOnce className="text-[#333333] sm:text-[#2c3a45] text-[14px]  sm:text-[24px] font-bold">
                           <p>ELEGENCE MEETS</p>
@@ -26,7 +26,7 @@ export const HeroSection = ({ darki }: HeroSectionProps) => {
                       </div>
 
                       <div className="flex-col justify-end  items-end h-full">
-                          <Slide damping={0.1} direction="up" duration={2000} triggerOnce className="text-white text-[18px] font-medium mt-16 sm:mt-40">
+                          <Slide damping={0.1} direction="up" duration={2000} triggerOnce className="text-white text-[18px] font-medium mt-20 sm:mt-40">
                             <Button variant="primary" size="md" text="Explore" endIcon={<OpenIcon/>} />
                           </Slide>
                       </div>
