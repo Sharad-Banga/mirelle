@@ -7,15 +7,15 @@ export const Prestige =({darki}:PrestigeInter) =>{
   return(
     <div  className={`${darki?"dark":""} `} >
 
-      <div className="h-[90vh] sm:h-[110vh]  sm:p-0 flex-col flex justify-between border-t-2 border-black dark:border-white bg-[#E0E0E0] dark:bg-[#181717] dark:text-white border-b-2 ">
+      <div className="h-[90vh] sm:h-[110vh]  sm:p-0 flex-col flex justify-between  border-t-2 border-black dark:border-white bg-[#E0E0E0] dark:bg-[#181717] dark:text-white border-b-2 ">
 
-          <div className=" h-[15vh] mt-4 sm:mt-10 flex items-center justify-evenly gap-3 sm:gap-0">
+          <div className=" h-[15vh] mt-4 sm:mt-10 flex flex-col sm:flex-row sm:justify-around justify-center items-center gap-3 sm:gap-0">
 
-                  <div className="font-semibold font-poppins animate-bounce text-[#DEA12F]">
+                  <div className="font-semibold font-poppins animate-bounce text-[#DEA12F] text-[10px] sm:text-[20px]">
                   ● Prestige
                   </div>
                   <div className="font-normal font-poppins text-[120%] sm:text-[320%] ml-26 ">
-                    <p><span className="font-medium">MIRELLE</span> IS MORE </p>
+                    <p className="flex sm:justify-start justify-center"><span className="font-medium font-bodoni">MIRELLE &nbsp;</span> IS MORE </p>
                     <p>THAN JUST FASHION.</p>
                   </div>
                   

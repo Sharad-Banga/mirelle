@@ -105,7 +105,7 @@ export const Fav =({darki}:FavInter)=>{
             Customer Favourites
         </div>
 
-        <div className="h-[80vh] mt-6 flex  justify-center gap-64">
+        <div className=" h-[80vh]  flex items-center justify-center gap-64">
             <div className={`hidden sm:flex h-full w-[30vw]   bg-cover rounded-md`}  style={{ 
                                             backgroundImage: `url(${cards[x-1].i1})`
                                           }}>
@@ -113,7 +113,7 @@ export const Fav =({darki}:FavInter)=>{
             </div>
 
 
-              <div className="flex flex-col mt-3 items-center justify-center  bg-white rounded-lg  h-[520px] w-[340px] sm:w-[360px] sm:mt-14" >
+              <div className="flex flex-col  items-center justify-center  bg-white rounded-lg  h-[520px] w-[340px] sm:w-[360px] " >
                     
 
                           <div className="flex items-center ">
