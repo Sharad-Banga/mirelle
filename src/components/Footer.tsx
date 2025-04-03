@@ -13,7 +13,7 @@ export const Footer =({darki}:FooterInter)=>{
         <div className="h-[60vh] bg-[#E0E0E0] dark:bg-[#181717] flex flex-col items-center justify-end ">
 
               <div className="w-[90vw] sm:w-[80vw]  h-[60%] sm:h-[50%] dark:text-white
-               border-t-2 border-black dark:border-white/55 flex justify-around sm:items-center font-poppins">
+               border-t-2 border-black dark:border-white/55 flex sm:justify-around justify-between  sm:items-center font-poppins">
                   
                   <div className="flex-col mt-2 sm:mt-0 ml-5 sm:ml-0">
 
