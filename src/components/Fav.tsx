@@ -115,7 +115,7 @@ export const Fav =({darki}:FavInter)=>{
                   </div>
 
                     <div className=" flex-col sm:mt-10 bg-red h-[60vh]">
-                          <div className={` h-[85%] w-[80vw] sm:w-[22vw]  bg-cover rounded-md cursor-pointer `}  style={{ 
+                          <div className={` h-[80%] w-[80vw] sm:w-[22vw] bg-center  bg-cover rounded-md cursor-pointer `}  style={{ 
                                             backgroundImage: `url(${cards[x-1].i2})`
                                           }}>
                             
