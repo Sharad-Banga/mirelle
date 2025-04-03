@@ -110,12 +110,12 @@ export const Fav =({darki}:FavInter)=>{
 
 
             <div className="flex items-center gap-3">
-                  <div onClick={handleback} className=" cursor-pointer">
+                  <div onClick={handleback} className=" mb-10 sm:mb-0 cursor-pointer">
                       <LeftIcon/>
                   </div>
 
-                    <div className=" flex-col sm:mt-10 bg-red h-[60vh]">
-                          <div className={` h-[80%] w-[80vw] sm:w-[22vw] bg-center  bg-cover rounded-md cursor-pointer `}  style={{ 
+                    <div className=" flex-col  sm:mt-10 bg-red h-[60vh]">
+                          <div className={` h-[85%]  w-[80vw] sm:w-[22vw] bg-center  bg-cover rounded-md cursor-pointer `}  style={{ 
                                             backgroundImage: `url(${cards[x-1].i2})`
                                           }}>
                             
@@ -127,7 +127,7 @@ export const Fav =({darki}:FavInter)=>{
                           </div>
                     </div>
                    
-                  <div onClick={handleNext} className=" cursor-pointer">
+                  <div onClick={handleNext} className="mb-10 sm:mb-0 cursor-pointer">
                     <NextIcon/>
                   </div>
             </div>
