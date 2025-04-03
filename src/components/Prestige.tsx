@@ -37,8 +37,10 @@ export const Prestige =({darki}:PrestigeInter) =>{
             <div className="w-[65%] sm:w-[40%] md:w-[20%] h-[59vh] max-h-[63vh] md:h-full bg-no-repeat  bg-center bg-[url('/images/p1.png')]   sm:bg-[url('/images/p1.png')] rounded-lg ">
             </div>
 
-            <div className="w-[45%] hidden md:inline md:w-[20%] h-[3] md:h-full bg-contain bg-no-repeat bg-center bg-[url('/images/p2.png')] rounded-lg">
-            </div>
+            
+                <div className="w-[45%] hidden md:inline md:w-[20%] h-[3] md:h-full  bg-no-repeat bg-center bg-[url('/images/p2.png')] bg-contain rounded-lg">
+                </div>
+            
           </div>
           <div className=" h-[15vh] text-black/20 dark:text-white/15 font-rammetto  animate-pulse  flex-col flex justify-end text-[300%] ml-5 sm:text-[600%] ">
                 MIRELLE

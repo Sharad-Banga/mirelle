@@ -113,7 +113,7 @@ export const Fav =({darki}:FavInter)=>{
             </div>
 
 
-              <div className="flex flex-col mt-3 items-center justify-center  bg-white rounded-lg  h-[470px] w-[340px] sm:w-[360px] sm:mt-14" >
+              <div className="flex flex-col mt-3 items-center justify-center  bg-white rounded-lg  h-[520px] w-[340px] sm:w-[360px] sm:mt-14" >
                     
 
                           <div className="flex items-center ">
@@ -122,7 +122,7 @@ export const Fav =({darki}:FavInter)=>{
                                       <LeftIcon/>
                                   </div>
 
-                                  <div className=" flex-col  sm:mt-10 bg-red h-[45vh]">
+                                  <div className=" flex-col  sm:mt-10 bg-red h-[50vh]">
                                         <div className={` h-[80%] mt-2  w-[70vw] sm:h-[90%] sm:w-[20vw] bg-center  bg-cover rounded-md cursor-pointer `}  style={{ 
                                                           backgroundImage: `url(${cards[x-1].i2})`
                                                         }}>  
