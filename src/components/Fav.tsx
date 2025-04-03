@@ -88,7 +88,7 @@ export const Fav =({darki}:FavInter)=>{
       }
     }
 
-    function handleDot(s){
+    function handleDot(s:number){
       setX(s);
     }
 
