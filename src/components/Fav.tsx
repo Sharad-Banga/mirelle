@@ -113,23 +113,23 @@ export const Fav =({darki}:FavInter)=>{
             </div>
 
 
-              <div className="flex flex-col items-center justify-center  bg-white rounded-lg  h-[500px] w-[330px]">
+              <div className="flex flex-col mt-3 items-center justify-center  bg-white rounded-lg  h-[500px] w-[330px] sm:w-[360px] sm:mt-14" >
                     
 
-                          <div className="flex items-center">
+                          <div className="flex items-center ">
 
-                                  <div onClick={handleback} className=" mb-10 text-[#964B00] sm:mb-0 cursor-pointer">
+                                  <div onClick={handleback} className="mt-6  text-[#964B00] sm:mb-0 cursor-pointer">
                                       <LeftIcon/>
                                   </div>
 
                                   <div className=" flex-col  sm:mt-10 bg-red h-[45vh]">
-                                        <div className={` h-[80%] mt-2  w-[70vw] sm:w-[22vw] bg-center  bg-cover rounded-md cursor-pointer `}  style={{ 
+                                        <div className={` h-[80%] mt-2  w-[70vw] sm:h-[90%] sm:w-[20vw] bg-center  bg-cover rounded-md cursor-pointer `}  style={{ 
                                                           backgroundImage: `url(${cards[x-1].i2})`
                                                         }}>  
                                     </div>
                                   </div>
 
-                                  <div onClick={handleNext} className="mb-10 text-[#964B00] sm:mb-0 cursor-pointer">
+                                  <div onClick={handleNext} className="mt-6 text-[#964B00] sm:mb-0 cursor-pointer">
                                     <NextIcon/>
                                   </div>
                           </div>
@@ -148,11 +148,11 @@ export const Fav =({darki}:FavInter)=>{
                     
 
                     <div className="text-black/40 flex justify-evenly w-[40%] mt-2">
-                      <div onClick={()=>handleDot(1)} className={`${x%5==1?"text-black":""}`}>●</div>
-                      <div onClick={()=>handleDot(2)} className={`${x%5==2?"text-black":""}`}>●</div>
-                      <div onClick={()=>handleDot(3)} className={`${x%5==3?"text-black":""}`}>●</div>
-                      <div onClick={()=>handleDot(4)} className={`${x%5==4?"text-black":""}`}>●</div>
-                      <div onClick={()=>handleDot(5)} className={`${x%5==0?"text-black":""}`}>●</div>
+                      <div onClick={()=>handleDot(1)} className={`${x%5==1?"text-black":""} cursor-pointer`}>●</div>
+                      <div onClick={()=>handleDot(2)} className={`${x%5==2?"text-black":""} cursor-pointer`}>●</div>
+                      <div onClick={()=>handleDot(3)} className={`${x%5==3?"text-black":""} cursor-pointer`}>●</div>
+                      <div onClick={()=>handleDot(4)} className={`${x%5==4?"text-black":""} cursor-pointer`}>●</div>
+                      <div onClick={()=>handleDot(5)} className={`${x%5==0?"text-black":""} cursor-pointer`}>●</div>
                     </div>
               </div>
 
