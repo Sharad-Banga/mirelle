@@ -88,6 +88,10 @@ export const Fav =({darki}:FavInter)=>{
       }
     }
 
+    function handleDot(s){
+      setX(s);
+    }
+
 
 
 
@@ -109,28 +113,48 @@ export const Fav =({darki}:FavInter)=>{
             </div>
 
 
-            <div className="flex items-center gap-3">
-                  <div onClick={handleback} className=" mb-10 sm:mb-0 cursor-pointer">
-                      <LeftIcon/>
-                  </div>
+              <div className="flex flex-col items-center justify-center  bg-white rounded-lg  h-[500px] w-[330px]">
+                    
 
-                    <div className=" flex-col  sm:mt-10 bg-red h-[60vh]">
-                          <div className={` h-[85%]  w-[80vw] sm:w-[22vw] bg-center  bg-cover rounded-md cursor-pointer `}  style={{ 
-                                            backgroundImage: `url(${cards[x-1].i2})`
-                                          }}>
-                            
+                          <div className="flex items-center">
+
+                                  <div onClick={handleback} className=" mb-10 text-[#964B00] sm:mb-0 cursor-pointer">
+                                      <LeftIcon/>
+                                  </div>
+
+                                  <div className=" flex-col  sm:mt-10 bg-red h-[45vh]">
+                                        <div className={` h-[80%] mt-2  w-[70vw] sm:w-[22vw] bg-center  bg-cover rounded-md cursor-pointer `}  style={{ 
+                                                          backgroundImage: `url(${cards[x-1].i2})`
+                                                        }}>  
+                                    </div>
+                                  </div>
+
+                                  <div onClick={handleNext} className="mb-10 text-[#964B00] sm:mb-0 cursor-pointer">
+                                    <NextIcon/>
+                                  </div>
                           </div>
 
-                          <div className="flex-col">
-                            <div className="flex justify-center font-poppins mt-5 text-[130%]">{cards[x-1].name}</div>
-                            <div className="flex justify-center text-black/55 dark:text-white/75 font-bold">{cards[x-1].price}</div>
-                          </div>
+
+
+
+                            <div className="flex-col text-red-800 font-medium">
+                              <div className="flex justify-center font-poppins  text-[130%]">{cards[x-1].name}
+                              </div>
+                              <div className="flex justify-center   text-black/70 font-bold">{cards[x-1].price}
+                              </div>
+                            </div>
+                      
+                    
+                    
+
+                    <div className="text-black/40 flex justify-evenly w-[40%] mt-2">
+                      <div onClick={()=>handleDot(1)} className={`${x%5==1?"text-black":""}`}>●</div>
+                      <div onClick={()=>handleDot(2)} className={`${x%5==2?"text-black":""}`}>●</div>
+                      <div onClick={()=>handleDot(3)} className={`${x%5==3?"text-black":""}`}>●</div>
+                      <div onClick={()=>handleDot(4)} className={`${x%5==4?"text-black":""}`}>●</div>
+                      <div onClick={()=>handleDot(5)} className={`${x%5==0?"text-black":""}`}>●</div>
                     </div>
-                   
-                  <div onClick={handleNext} className="mb-10 sm:mb-0 cursor-pointer">
-                    <NextIcon/>
-                  </div>
-            </div>
+              </div>
 
             
         </div>
