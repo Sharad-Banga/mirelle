@@ -1,4 +1,4 @@
-import { Fade } from "react-awesome-reveal";
+
 import Marquee from "react-fast-marquee";
 
 interface ExciInter{

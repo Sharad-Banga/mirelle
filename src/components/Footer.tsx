@@ -49,7 +49,7 @@ export const Footer =({darki}:FooterInter)=>{
 
               <div className="w-[80vw] flex-col text-black dark:text-white flex justify-center items-center pb-10  h-[25%] gap-2 ">
 
-                <div className="flex items-center font-poppins justify-center text-black dark:text-white text-[65%] sm:text-[90%] mb-1">Developed and Designed by Sharad Banga  &nbsp;  <a target="_blank"  href="https://x.com/sharad_banga"> <Xicon/> </a>   
+                <div className="flex items-center font-poppins justify-center text-black dark:text-white text-[65%] sm:text-[90%] mb-1">Developed and Designed by Sharad Banga  &nbsp;  <a target="_blank"  href="https://x.com/sharad_banga"> <Xicon/> </a> &nbsp;  
                 <a className="bg-white rounded-3xl h-7 w-7 flex items-center" target="_blank" href="https://github.com/Sharad-Banga"><GithubIcon/></a>
                 </div>
 
