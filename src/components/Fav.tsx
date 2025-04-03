@@ -113,7 +113,7 @@ export const Fav =({darki}:FavInter)=>{
             </div>
 
 
-              <div className="flex flex-col mt-3 items-center justify-center  bg-white rounded-lg  h-[500px] w-[330px] sm:w-[360px] sm:mt-14" >
+              <div className="flex flex-col mt-3 items-center justify-center  bg-white rounded-lg  h-[470px] w-[340px] sm:w-[360px] sm:mt-14" >
                     
 
                           <div className="flex items-center ">
