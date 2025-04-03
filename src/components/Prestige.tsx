@@ -7,7 +7,7 @@ export const Prestige =({darki}:PrestigeInter) =>{
   return(
     <div  className={`${darki?"dark":""} `} >
 
-      <div className="h-[100vh] sm:h-[110vh] p-4 sm:p-0 flex-col flex justify-between border-t-2 border-black dark:border-white bg-white dark:bg-black dark:text-white border-b-2 ">
+      <div className="h-[100vh] sm:h-[110vh] p-4 sm:p-0 flex-col flex justify-between border-t-2 border-black dark:border-white bg-[#E0E0E0]  dark:bg-[#181717] dark:text-white border-b-2 ">
 
           <div className=" h-[15vh] mt-4 sm:mt-10 flex items-center justify-evenly gap-3 sm:gap-0">
 
@@ -40,7 +40,7 @@ export const Prestige =({darki}:PrestigeInter) =>{
             <div className="w-[45%] hidden md:inline md:w-[20%] h-[3] md:h-full bg-contain bg-no-repeat bg-center bg-[url('/images/p2.png')] rounded-lg">
             </div>
           </div>
-          <div className=" h-[15vh] text-white/10 font-rammetto   flex-col flex justify-end text-[300%] ml-5 sm:text-[600%] ">
+          <div className=" h-[15vh] text-white dark:text-white/10 font-rammetto   flex-col flex justify-end text-[300%] ml-5 sm:text-[600%] ">
                 MIRELLE
           </div>
 

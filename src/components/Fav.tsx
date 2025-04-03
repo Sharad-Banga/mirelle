@@ -95,9 +95,9 @@ export const Fav =({darki}:FavInter)=>{
     <div className={`${darki?"dark":""} `}>
 
 
-        <div className=" h-[110vh] bg-white dark:bg-black dark:text-white text-black flex-col flex sm:justify-evenly" >
+        <div className=" h-[90vh] sm:h-[130vh] bg-white dark:bg-black dark:text-white text-black flex-col flex sm:justify-evenly" >
 
-        <div className=" mt-12 sm:mb-16 font-poppins text-3xl dark:text-white text-black flex justify-center">
+        <div className=" mt-12 sm:mt-0 sm:mb-0 font-poppins text-3xl dark:text-white text-black flex justify-center ">
             Customer Favourites
         </div>
 

@@ -6,6 +6,8 @@ import { HeroSection } from './components/HeroSection';
 import { Collections } from './components/Collections';
 import { Prestige } from './components/Prestige';
 import { Fav } from './components/Fav';
+import { Exclusive } from './components/Exclusive';
+import { Footer } from './components/Footer';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
       <Prestige darki={darki} />
 
       <Fav darki={darki}/>
+      <Exclusive darki={darki} />
+      <Footer darki={darki} />
     </>
   )
 }

@@ -13,6 +13,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         quattrocento: ['Quattrocento', 'serif'],
         rammetto: ['Rammetto One', 'cursive'],
+        unbounded: ['Unbounded', 'cursive'],
       },
     },
   },
