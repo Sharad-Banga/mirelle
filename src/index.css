@@ -2,4 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;700&display=swap');
+
+@keyframes pendulumSwing {
+  0% { transform: rotate(-20deg); }  /* Swing left */
+  50% { transform: rotate(20deg); }  /* Swing right */
+  100% { transform: rotate(-20deg); } /* Back to left */
+}
+
+.pivot-pendulum {
+  display: inline-block;
+  transform-origin: left center; /* Pivot from the left */
+  animation: pendulumSwing 2s ease-in-out infinite;
+}

@@ -7,11 +7,11 @@ export const Prestige =({darki}:PrestigeInter) =>{
   return(
     <div  className={`${darki?"dark":""} `} >
 
-      <div className="h-[100vh] sm:h-[110vh] p-4 sm:p-0 flex-col flex justify-between border-t-2 border-black dark:border-white bg-[#E0E0E0]  dark:bg-[#181717] dark:text-white border-b-2 ">
+      <div className="h-[100vh] sm:h-[110vh] p-4 sm:p-0 flex-col flex justify-between border-t-2 border-black dark:border-white bg-[#E0E0E0] dark:bg-[#181717] dark:text-white border-b-2 ">
 
           <div className=" h-[15vh] mt-4 sm:mt-10 flex items-center justify-evenly gap-3 sm:gap-0">
 
-                  <div className="font-semibold font-poppins text-[#DEA12F]">
+                  <div className="font-semibold font-poppins animate-bounce text-[#DEA12F]">
                   ● Prestige
                   </div>
                   <div className="font-normal font-poppins text-[120%] sm:text-[320%] ml-26 ">
@@ -34,13 +34,13 @@ export const Prestige =({darki}:PrestigeInter) =>{
               </div>
             </div>
 
-            <div className="w-[65%] sm:w-[40%] md:w-[20%] h-[59vh] max-h-[63vh] md:h-full bg-no-repeat  bg-center bg-[url('/images/p1.png')]   sm:bg-[url('/images/p1.png')] rounded-lg ">
+            <div className="w-[65%] sm:w-[40%] md:w-[20%] h-[59vh] max-h-[63vh] md:h-full bg-no-repeat  bg-center bg-[url('./images/p1.png')]   sm:bg-[url('./images/p1.png')] rounded-lg ">
             </div>
 
-            <div className="w-[45%] hidden md:inline md:w-[20%] h-[3] md:h-full bg-contain bg-no-repeat bg-center bg-[url('/images/p2.png')] rounded-lg">
+            <div className="w-[45%] hidden md:inline md:w-[20%] h-[3] md:h-full bg-contain bg-no-repeat bg-center bg-[url('./images/p2.png')] rounded-lg">
             </div>
           </div>
-          <div className=" h-[15vh] text-white dark:text-white/10 font-rammetto   flex-col flex justify-end text-[300%] ml-5 sm:text-[600%] ">
+          <div className=" h-[15vh] text-black/20 dark:text-white/15 font-rammetto  animate-pulse  flex-col flex justify-end text-[300%] ml-5 sm:text-[600%] ">
                 MIRELLE
           </div>
 
