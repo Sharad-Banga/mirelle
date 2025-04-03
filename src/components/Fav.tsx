@@ -12,36 +12,36 @@ interface FavInter{
 const cards = [
   {
     "id": 0,
-    "i1": './images/f1.png',
-    "i2":"./images/fi1.png",
+    "i1": '/images/f1.png',
+    "i2":"/images/fi1.png",
     "name":"Warwick Waxed Jacket",
     "price":"$364"
   },
   {
     "id": 1,
-    "i1": "./images/f2.png",
-    "i2":"./images/fi2.png",
+    "i1": "/images/f2.png",
+    "i2":"/images/fi2.png",
     "name":"Cove Knitted Shirt",
     "price":"$179"
   },
   {
     "id": 2,
-    "i1": "./images/f3.png",
-    "i2":"./images/fi3.png",
+    "i1": "/images/f3.png",
+    "i2":"/images/fi3.png",
     "name":"Whool Overshirt",
     "price":"$297"
   },
   {
     "id": 3,
-    "i1": "./images/f4.png",
-    "i2":"./images/fi4.png",
+    "i1": "/images/f4.png",
+    "i2":"/images/fi4.png",
     "name":"1796 Jumper",
     "price":"$166"
   },
   {
     "id": 4,
-    "i1": "./images/f5.png",
-    "i2":"./images/fi5.png",
+    "i1": "/images/f5.png",
+    "i2":"/images/fi5.png",
     "name":"Bexley Jacket",
     "price":"$364"
   },
@@ -102,7 +102,9 @@ export const Fav =({darki}:FavInter)=>{
         </div>
 
         <div className="h-[80vh] mt-6 flex  justify-center gap-64">
-            <div className={`hidden sm:flex h-full w-[30vw] bg-[url('/images/f${x}.png')] bg-cover rounded-md`}>
+            <div className={`hidden sm:flex h-full w-[30vw]   bg-cover rounded-md`}  style={{ 
+                                            backgroundImage: `url(${cards[x-1].i1})`
+                                          }}>
 
             </div>
 
@@ -113,7 +115,9 @@ export const Fav =({darki}:FavInter)=>{
                   </div>
 
                     <div className=" flex-col sm:mt-10 bg-red h-[60vh]">
-                          <div className={` h-[85%] w-[80vw] sm:w-[22vw] bg-[url('/images/fi${x}.png')] bg-cover rounded-md cursor-pointer hover:bg-[url('./images/f${x}.png')]`}>
+                          <div className={` h-[85%] w-[80vw] sm:w-[22vw]  bg-cover rounded-md cursor-pointer `}  style={{ 
+                                            backgroundImage: `url(${cards[x-1].i2})`
+                                          }}>
                             
                           </div>
 

@@ -14,7 +14,7 @@ export const HeroSection = ({ darki }: HeroSectionProps) => {
 
           </div>
             <div className="flex justify-center items-center w-full bg-white dark:bg-black">
-                <div className="bg-[url('./images/img3.png')] w-[95vw] rounded-2xl mb-2.5 sm:mb-8 mt-[20px] h-[63vh]  bg-no-repeat bg-inherit bg-cover bg-center
+                <div className="bg-[url('/images/img3.png')] w-[95vw] rounded-lg mb-2.5 sm:mb-8 mt-[20px] h-[63vh]  bg-no-repeat bg-inherit bg-cover bg-center
                  sm:h-[88vh] ">
 
                   <div className=" sm:h-[200px] mt-[65%] sm:mt-[26%] flex justify-around w-full pl-2 pr-2">

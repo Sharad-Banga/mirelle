@@ -21,7 +21,7 @@ export const Collections = ({darki}:CollectionInter) =>{
 
 
                   
-                    <div className=" h-full w-[110px]  sm:w-[25%] rounded-3xl  bg-cover sm:bg-center bg-no-repeat  bg-[url('./images/c1.png')]">
+                    <div className=" h-full w-[110px]  sm:w-[25%] rounded-3xl  bg-cover sm:bg-center bg-no-repeat  bg-[url('/images/c1.png')]">
 
                       <div className=" h-[95%] flex-col flex justify-end items-center">
                         <Button variant="secondary" text="Men's Collection ➝" />
@@ -30,7 +30,7 @@ export const Collections = ({darki}:CollectionInter) =>{
 
                     </div>                  
                   
-                    <div className="h-full  w-[120px] sm:w-[27%] bg-cover sm:bg-center rounded-3xl  bg-[url('./images/c2.png')]">
+                    <div className="h-full  w-[120px] sm:w-[27%] bg-cover sm:bg-center rounded-3xl  bg-[url('/images/c2.png')]">
                       <div className=" h-[95%] flex-col flex justify-end items-center">
                         <Button variant="secondary" text="Women's Collection ➝" />
                       </div>
@@ -38,7 +38,7 @@ export const Collections = ({darki}:CollectionInter) =>{
                   
                   
                   
-                    <div className="sm:h-full  w-[110px] sm:w-[25%] bg-cover sm:bg-center rounded-3xl  bg-[url('./images/c3.png')]">
+                    <div className="sm:h-full  w-[110px] sm:w-[25%] bg-cover sm:bg-center rounded-3xl  bg-[url('/images/c3.png')]">
                       <div className=" h-[95%] flex-col flex justify-end items-center">
                         <Button variant="secondary" text="Summer Collection ➝" />
                       </div>
